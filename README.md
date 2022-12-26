@@ -407,6 +407,9 @@ Para nuestras pruebas se utilizó un grupo de 5 individuos entre hombres y mujer
 ### 11.3 Comentarios Usuarios
 ![](img/Imagen24.png)
 ## 12. Conlusiones y Resultados finales
+•	El programa presento un funcionamiento correcto en base a lo solicitado, aplicando conceptos de POO y cumpliendo los requerimientos de usuario.
+
+•	Según los usuarios el programa es funcional, divertido y entendible, sin embargo como aspecto general a mejorar seria bueno representar de mejor manera nuestro mapa y jugadores.
 
 
 
