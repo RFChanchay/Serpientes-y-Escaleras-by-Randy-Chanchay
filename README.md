@@ -318,17 +318,94 @@ Para ganar se deberá caer en la casilla 100 ósea la posición 99 debido a que 
 ![](img/Imagen4.png)
 ![](img/Imagen5.png)
 ## 9. Verificación de requisitos de usuario
-### 9.1 Historia de usuario 1
+### 9.1 Historia de usuario 1: Moverse por el tablero
+```
+void avanzar(Tablero* tablero) {
+		// Lanzar el dado para obtener un valor aleatorio entre 1 y 6
+		int dado = rand() % 6 + 1;
+		printf("\n%s lanza el dado y obtiene %d\n", this->nombre, dado);
+		system("pause");
 
-### 9.2 Historia de usuario 2
-### 9.3 Historia de usuario 3
 
+		// Avanzar la posición del jugador en el tablero
+		this->posicion += dado;
 
+		// Si el jugador se pasó del final del tablero, volver a la última casilla
+		if (this->posicion >= tablero->getNumCasillas()) {
+			this->posicion = tablero->getNumCasillas() - 1;
+		}
+
+		// Obtener la casilla en la que se encuentra el jugador
+		Casilla* casilla = tablero->obtenerCasilla(this->posicion);
+
+		// Si la casilla es una serpiente o una escalera, mover al jugador a su destino
+		if (casilla->getTipo() == 1) {  // Serpiente
+			printf("\n                  __");
+			printf("\n      _______    /*_>-<");
+			printf("\n  ___/ _____ \__/ /");
+			printf("\n< ____/     \____/");
+			printf("\n%s encuentra una serpiente y baja a la casilla %d\n", this->nombre, casilla->getDestino()+1);
+			this->posicion = casilla->getDestino();
+			system("pause");
+
+		}
+		else if (casilla->getTipo() == 2) {  // Escalera
+			
+			printf("\n |--|");
+			printf("\n |--|");
+			printf("\n |--|");
+			printf("\n |--|");
+
+			printf("\n%s encuentra una escalera y sube a la casilla %d\n", this->nombre, casilla->getDestino()+1);
+			this->posicion = casilla->getDestino();
+			system("pause");
+		}
+		printf("%s encuentra en la casilla %d \n", this->nombre, this->posicion+1);
+	}
+```
+![](img/Imagen6.png)
+### 9.2 Historia de usuario 2: Determinar que un jugador ganó
+```
+// Metodo para determinar si el jugador ha ganado el juego
+	bool haGanado() { return this->posicion == 99; }
+```
+![](img/Imagen5.png)
+### 9.3 Historia de usuario 3: Movimientos determinados por dados
+```
+// Lanzar el dado para obtener un valor aleatorio entre 1 y 6
+		int dado = rand() % 6 + 1;
+		printf("\n%s lanza el dado y obtiene %d\n", this->nombre, dado);
+		system("pause");
+```
+![](img/Imagen7.png)
 ## 10. Manual de Instalacion para Usuarios
+### Paso 1.Accede a nuestro repositorio.
+![](img/Imagen8.png)
+### Paso 2.Descarga el archivo ejecutable (.exe)
+![](img/Imagen9.png)
+### Paso 3.Ejecuta el archivo como administrador.
+![](img/Imagen10.png)
+### Paso 4.Disfruta del juego.
+![](img/Imagen1.png)
 ## 11. Pruebas en Usuarios
+Para nuestras pruebas se utilizó un grupo de 5 individuos entre hombres y mujeres en una edad ente 20 y 25 años. Algunos con conocimientos en programación. Para las pruebas se les hizo ejecutar el juego y jugarlo entre pares para después plasmar sus opiniones en una encuesta basada en niveles de concordancia según diferentes preguntas.
 ### 11.1 Galeria de pruebas de Usuario
+![](img/Imagen11.png)
+![](img/Imagen12.png)
 ### 11.2 Resultados encuesta a Usuarios
+![](img/Imagen13.png)
+![](img/Imagen14.png)
+![](img/Imagen15.png)
+![](img/Imagen16.png)
+![](img/Imagen17.png)
+![](img/Imagen18.png)
+![](img/Imagen19.png)
+![](img/Imagen20.png)
+![](img/Imagen21.png)
+![](img/Imagen22.png)
+![](img/Imagen23.png)
 ### 11.3 Comentarios Usuarios
+![](img/Imagen24.png)
 ## 12. Conlusiones y Resultados finales
 
 
