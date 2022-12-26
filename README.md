@@ -312,14 +312,24 @@ En el caso de nuestros métodos contamos con getters, setters, constructores y d
 
 Para ganar se deberá caer en la casilla 100 ósea la posición 99 debido a que se comienza en 0, una vez ocurrido esto el programa se detendrá mostrando un mensaje final al ganador.
 ## 8. Ejecución del Código
-![](img/Imagen1.jpg)
-![](img/Imagen2.jpg)
-![](img/Imagen3.jpg)
-![](img/Imagen4.jpg)
-![](img/Imagen5.jpg)
-## 8. Verificación de requisitos de usuario
+![](img/Imagen1.png)
+![](img/Imagen2.png)
+![](img/Imagen3.png)
+![](img/Imagen4.png)
+![](img/Imagen5.png)
+## 9. Verificación de requisitos de usuario
+### 9.1 Historia de usuario 1
+
+### 9.2 Historia de usuario 2
+### 9.3 Historia de usuario 3
 
 
-## 8. Manual de Instalacion para U
+## 10. Manual de Instalacion para Usuarios
+## 11. Pruebas en Usuarios
+### 11.1 Galeria de pruebas de Usuario
+### 11.2 Resultados encuesta a Usuarios
+### 11.3 Comentarios Usuarios
+## 12. Conlusiones y Resultados finales
+
 
 
