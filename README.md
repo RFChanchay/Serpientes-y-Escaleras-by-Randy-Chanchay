@@ -1,5 +1,5 @@
 # Serpientes-y-Escaleras-by-Randy-Chanchay
-
+### Nota: El siguiente codigo fue elaborado en C++ para ver su version en C da click el siguiente [enlace](https://github.com/RFChanchay/Serpientes-y-Escaleras-by-Randy-Chanchay-en-C.git)
 ## 1.Contexto del ejercicio
 Serpientes y escaleras es un juego de mesa en el que dos o más jugadores lanzan dados para mover sus fichas en un tablero. El tablero se compone de una colección de cuadrados numerados y está adornado con 'serpientes' y 'escaleras', que unen dos cuadrados en el tablero: las serpientes unen los cuadrados hacia abajo mientras que las escaleras los unen hacia arriba. Esto significa que aterrizar en la parte inferior de una escalera te lleva a la parte superior de esa escalera, mientras que aterrizar en la parte superior de una serpiente te lleva a la parte inferior de esa serpiente. El objetivo del juego es llevar tu ficha a la casilla final antes que tus oponentes.
 
